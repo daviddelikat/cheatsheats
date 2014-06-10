@@ -2,6 +2,8 @@
 # bin/mkalnumdirs
 # make directories for alnum sorting
 
+mkdir contents; cd contents
+
 mkdir a-d ; ( cd a-d; mkdir a b c d )
 mkdir e-h ; ( cd e-h; mkdir e f g h )
 mkdir i-l ; ( cd i-l; mkdir i j k l )
@@ -10,4 +12,14 @@ mkdir q-u ; ( cd q-u; mkdir q r s t u )
 mkdir v-z ; ( cd v-z; mkdir v w x y z )
 mkdir 1-5 ; ( cd 1-5; mkdir 1 2 3 4 5 )
 mkdir 6-0 ; ( cd 6-0; mkdir 6 7 8 9 0 )
+
+# put something in each dir to force git to track them...
+touch a-d/a/.mkdir a-d/b/.mkdir a-d/c/.mkdir a-d/d/.mkdir
+touch e-h/e/.mkdir e-h/f/.mkdir e-h/g/.mkdir e-h/h/.mkdir
+touch i-l/i/.mkdir i-l/j/.mkdir i-l/k/.mkdir i-l/l/.mkdir
+touch m-p/m/.mkdir m-p/n/.mkdir m-p/o/.mkdir m-p/p/.mkdir
+touch q-u/q/.mkdir q-u/r/.mkdir q-u/s/.mkdir q-u/t/.mkdir q-u/u/.mkdir
+touch v-z/v/.mkdir v-z/w/.mkdir v-z/x/.mkdir v-z/y/.mkdir v-z/z/.mkdir
+touch 1-5/1/.mkdir 1-5/2/.mkdir 1-5/3/.mkdir 1-5/4/.mkdir 1-5/5/.mkdir
+touch 6-0/0/.mkdir 6-0/6/.mkdir 6-0/7/.mkdir 6-0/8/.mkdir 6-0/9/.mkdir
 
